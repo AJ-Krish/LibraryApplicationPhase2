@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Add Book</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        <link href="/css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/animation-style.css">
+        
+
+        <link rel="stylesheet" href="/css/style1.css">
+        <!-- <script src="/js/form.js"></script> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link rel = "icon" href ="/images/addbook.png" type = "image/x-icon">
+        
+        
+	</head>
+	<body>
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/admin/books" class="navbar-brand"><h4>Books</h4></a>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            
+            <li>
+              <a href="/admin/addauthor"><h4>Add Author</h4></a>
+            </li>
+            <li>
+              <a href="/"><h4>Logout</h4></a>
+            </li>
+           
+                 
+          </ul>
+          <ul class="nav navbar-right navbar-nav me">
+            <li class="dropdown me">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+              <ul class="dropdown-menu me" style="padding:12px;">
+                <form class="form-inline">
+                  <button type="submit" class="btn btn-default pull-right"><i class="fa fa-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+                </form>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<div class="animation-wrapper">
+        
+  <div class="animation-box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+
+
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 mar">
+        <h1>Update Book
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    
+    
+    <div class="col-md-12"> 
+      
+      <!-- <div class="panel"> -->
+        
+        <div class="panel-body">
+
+            
+          
+          
+            
+          <!--/stories-->
+          
+
+
+          <div class="contain-form" >
+
+          <form action="/admin/books/updated/<%=id%>" method="POST">
+            
+            
+            <div class="input-box" >
+            <h2 style="color:white;"><b>update book</b></h2>
+          </div>
+          <div class="input-box">
+            <span class="span1"><i class="fa fa-book"></i></span>
+            <input id="id" name="id" type="text" placeholder="<%=id%>" required value="<%=id%>">
+          </div>
+            <div class="input-box">
+                <span class="span1"><i class="fa fa-book"></i></span>
+                <input  id="name" name="title" type="text" placeholder="Name Of Book" required >
+            </div>
+        
+            <div class="input-box">
+                <span class="span1"><i class="fa fa-user-o"></i></span>
+                <input name="author" style="color: black;" id="author" type="text" placeholder="Author" required >
+                <!-- <label for="errormail" id="errormail"></label> -->
+            </div>
+        
+            <div class="input-box">
+                <span class="span1"><i class="fa fa-file"></i></span>
+                <input name="genre" id="genre" type="text" placeholder="Genre" required >
+                <!-- <label id="errornumber" for="number"></label> -->
+            </div>
+        
+            <div class="input-box">
+                <span class="span1"><i class="fa fa-photo"></i></span>
+                <input name="image" type="file" id="image" placeholder="image" required >
+            </div>
+            <div class="input-box">
+                <button class="button-signup" type="submit"><i class="fa fa-book"></i>Updatebook</button>
+            <!-- <div class="misc">
+                if you already have an account??<a href="loginnew.html">Login!!</a>
+            </div>  -->
+            </div>
+        
+        
+        </form>
+      </div>
+     
+        
+    
+    
+          <!--/stories-->
+          
+          
+          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="fa fa-plus"></i></a>
+        
+          
+        </div>
+    
+
+      <!-- </div> -->
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+
+                                                
+
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> by Ajay Krishnan</p>      
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/jquery.passwordstrength.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                $("#password").passwordStrength();
+            });
+        </script> -->
+	</body>
+</html>
